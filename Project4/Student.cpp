@@ -32,7 +32,6 @@ void Student::setAge(int age) {
     }
 }
 
-
 string Student::getInfo()
 {
     return name + ": age = " + to_string(age) /*+ "; mark = " + to_string(mark)*/;
