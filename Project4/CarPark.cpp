@@ -1,4 +1,4 @@
-#include "CarPark.h"
+﻿#include "CarPark.h"
 
 CarPark::CarPark(){}
 CarPark::CarPark(string name){}
@@ -25,13 +25,33 @@ void CarPark::add(Car car){
 		int i = 0;
 		for (; i < count; i++)
 		{
-			temp[1] = list[i];
+			temp[i] = list[i];
 			delete[] list;
+			list = temp;
+			count++;
 		}
 
 	}
 }
 
-string CarPark::getInfo(){
+void CarPark::remove(int index) {
+	
+	if (list != NULL && index >= 0 && index < count) {
+		Car* temp = new Car[count - 1];
+		
+		for (int i = 0, j = 0; i < count; i++) {
+			if (i != index) {
+				temp[j] = list[i];
+				j++;
+			}
+		}
+		delete[] list;
+		list = temp;
+	}
+}
 
+string CarPark::getInfo(){
+	if (list == NULL){
+
+	}
 }
