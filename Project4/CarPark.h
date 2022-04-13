@@ -4,7 +4,7 @@
 
 class CarPark
 {
-	friend class Maneger;
+	friend class Manager;
 
 private:
 	static int count;

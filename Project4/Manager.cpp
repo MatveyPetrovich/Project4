@@ -5,7 +5,7 @@ double Manager::calculateAvgAge(CarPark carPark) {
 
 	for (int i = 0; i < carPark.count; i++)
 	{
-
+		
 	}
 
 	return avg;
