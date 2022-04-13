@@ -1,8 +1,15 @@
 ﻿#include "Car.h"
 #include "CarPark.h"
 
+void change(Car &car) {
+	car.model = "X";
+}
+
 int main()
 {
-	CarPark carpark("10 main street");
-
+	Car car;
+	
+	cout << car.getInfo() << endl;
+	change(car);
+	cout << car.getInfo() << endl;
 }

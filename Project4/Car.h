@@ -1,8 +1,10 @@
-﻿#include "header.h"
+﻿#pragma once
+#include "header.h"
 
 using namespace std;
 
 class Car {
+    friend void change(Car &car);
 private:
     string brand;
     string model;

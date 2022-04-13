@@ -1,8 +1,11 @@
-﻿#include "header.h"
+﻿#pragma once
+#include "header.h"
 #include "Car.h"
 
 class CarPark
 {
+	friend class Maneger;
+
 private:
 	static int count;
 
@@ -30,6 +33,8 @@ public:
 	void add(Car car);
 
 	string getInfo();
+
+	void remove(int index);
 
 
 

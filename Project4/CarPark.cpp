@@ -1,4 +1,5 @@
-﻿#include "CarPark.h"
+﻿#pragma once
+#include "CarPark.h"
 
 CarPark::CarPark(){}
 CarPark::CarPark(string name){}

@@ -144,9 +144,11 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Car.h" />
     <ClCompile Include="header.h" />
+    <ClCompile Include="Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CarPark.h" />
+    <ClInclude Include="Manager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
