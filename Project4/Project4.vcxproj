@@ -140,7 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CarPark.cpp" />
-    <ClCompile Include="Leader.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Car.h" />
@@ -148,11 +147,8 @@
     <ClCompile Include="Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Car1.h" />
     <ClInclude Include="CarPark.h" />
-    <ClInclude Include="Leader.h" />
     <ClInclude Include="Manager.h" />
-    <ClInclude Include="Maneger1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,7 +10,7 @@ private:
 	static int count;
 
 	string name;
-	int count;
+	int size;
 	Car* list;
 
 public:
@@ -19,14 +19,16 @@ public:
 
 	CarPark();
 	CarPark(string name);
-	CarPark(string name, int count, CarPark* list);
+	CarPark(string name, int size, Car* list);
 	~CarPark();
 
 	
 	string getName();
 	void setName(string name);
 
-	int getCount();
+	int getSize();
+
+	static int getCount();
 
 	Car get(int index);
 
